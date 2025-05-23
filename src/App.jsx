@@ -26,7 +26,7 @@ function App() {
           <Route path="/admin/users" element={<Users />} />
           <Route path="/admin/users/:id" element={<UserDetail />} />
           <Route path="/admin/settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/admin/*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
