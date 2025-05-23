@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+
 import { getUserDetail } from '../../database/mockData';
+import { useParams } from 'react-router';
 
 function UserDetail() {
   const { id } = useParams();

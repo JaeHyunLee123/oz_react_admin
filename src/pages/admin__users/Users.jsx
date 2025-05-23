@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { users } from '../../database/mockData';
+import { Link } from 'react-router';
 
 // 1. user.name을 클릭하면 /admin/users/:id로 이동되어야 합니다.
 
