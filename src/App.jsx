@@ -20,13 +20,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/admin" element={<Dashboard />}>
-            <Route path="/admin/users" element={<Users />} />
-            <Route path="/admin/users/:id" element={<UserDetail />} />
-            <Route path="/admin/settings" element={<Settings />} />
-          </Route>
+          <Route path="/admin" element={<Dashboard />} />
+          <Route path="/admin/users" element={<Users />} />
+          <Route path="/admin/users/:id" element={<UserDetail />} />
+          <Route path="/admin/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
